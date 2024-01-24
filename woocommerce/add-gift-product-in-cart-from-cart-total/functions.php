@@ -1,9 +1,25 @@
 <?php
+/**
+ * Hooks & filters
+ */
+add_action( 'woocommerce_before_calculate_totals', 'add_gift_product_on_cart' );
+add_filter( 'woocommerce_quantity_input_args', 'force_product_gift_quantity', 10, 2 );
+
+/**
+ * Get the gift product ID, change with your product ID or change for a function to get it dynamically
+ *
+ * @return void
+ */
 function webdeclic_get_gift_product_id() {
 	return 123456; // Change with your gifted product ID
 }
 
-add_action( 'woocommerce_before_calculate_totals', 'add_gift_product_on_cart' );
+/**
+ * Add the gift product to cart if the subtotal is more than the targeted amount
+ *
+ * @param  mixed $cart
+ * @return void
+ */
 function add_gift_product_on_cart( $cart ) {
 	if ( is_admin() && ! defined( 'DOING_AJAX' ) ) return;
 
@@ -43,7 +59,13 @@ function add_gift_product_on_cart( $cart ) {
 	}
 }
 
-add_filter( 'woocommerce_quantity_input_args', 'force_product_gift_quantity', 10, 2 );
+/**
+ * Force the quantity to 1 for the gift product
+ *
+ * @param  mixed $args
+ * @param  mixed $product
+ * @return void
+ */
 function force_product_gift_quantity( $args, $product ) {
 	
 	if(!isset($args['input_name'])) return $args;

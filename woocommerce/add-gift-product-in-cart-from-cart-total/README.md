@@ -1,0 +1,2 @@
+# Add Gift Product in Cart from Cart Total
+This code snippet allows you to add a gift product to the cart when the cart total reaches a certain amount. The gift product will be added to the cart automatically and the customer will not be able to remove it.
