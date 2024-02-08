@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteRule ^wp-content/uploads/.*\.(\.9|73i87a|386|aaa|abc|aepl|aru|atm|aut|bat|bhx|bin|bkd|blf|bll|bmw|boo|bps|bqf|breaking_bad|btc|buk|bup|bxz|ccc|ce0|ceo|cfxxe|chm|cih|cla|cmd|com|coverton|cpl|crinf|crjoker|crypt|crypted|cryptolocker|cryptowall|ctbl|cxq|cyw|czvxce|darkness|dbd|delf|dev|dlb|dli|dll|dllx|dom|drv|dx|dxz|dyv|dyz|ecc|enciphered|encrypt|encrypted|enigma|exe1|exe_renamed|exx|ezt|ezz|fag|fjl|fnr|fuj|fun|good|gzquar|ha3|hlp|hlw|hsq|hts|iva|iws|jar|kcd|kernel_complete|kernel_pid|kernel_time|keybtc@inbox_com|kimcilware|kkk|kraken|lechiffre|let|lik|lkh|lnk|locked|locky|lok|lol\!|lpaq5|magic|mfu|micro|mjg|mjz|nls|oar|ocx|osa|ozd|p5tkjw|pcx|pdcr|pgm|php|php2|php3|pid|pif|plc|poar2w|pr|pzdc|qit|qrn|r5a|rdm|rhk|rna|rokku|rrk|rsc_tmp|s7p|scr|scr|shs|ska|smm|smtmp|sop|spam|ssy|surprise|sys|tko|tps|tsa|tti|ttt|txs|upa|uzy|vb|vba|vbe|vbs|vbx|vexe|vxd|vzr|wlpginstall|wmf|ws|wsc|wsf|wsh|wss|xdu|xir|xlm|xlv|xnt|xnxx|xtbl|xxx|xyz|zix|zvz|zzz)$ - [R=404,L,NC]
+</IfModule>
