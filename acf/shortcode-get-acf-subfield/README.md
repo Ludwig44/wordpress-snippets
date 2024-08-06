@@ -9,10 +9,22 @@ This snippet add a shortcode for get ACF subfield value.
 - `post_id`: (int) {Optional} Post ID, default is current post ID.
 - `field`: (string) {Required} ACF field key.
 - `path`: (string) {Required} ACF subfield path, use "->" to separate levels.
+- `cache`: (bool) {Optional} Use cache, default is true.
 
-### Example
+### Examples
+- Get subfield value in a repeater from a specific post.
 ```php
-[get_acf_subfield post_id="123" field="my_field_key" path="0->my_sub_key"]
+[get_acf_subfield post_id="123" field="my_repeater_field_key" path="0->my_sub_key" cache="true"]
+```
+
+- Get subfield value in a group field from current post.
+```php
+[get_acf_subfield field="my_group_field_key" path="my_sub_key"]
+```
+
+- Get JSON from group or repeater field.
+```php
+[get_acf_subfield field="my_group_field_key"]
 ```
 
 ### Return
